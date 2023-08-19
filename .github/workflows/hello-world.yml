@@ -3,8 +3,8 @@ on: disspatch_workflow
 jobs:
   first job:
     runs-on: ubuntu-latest
-      steps:
-        - name: print greeting
-		  run: echo "hello world"
-		- name: print goodbye
-		  run: echo "hello bye"
+    steps:
+      - name: print greeting
+        run: echo "hello world"
+      - name: print goodbye
+	run: echo "hello bye"
