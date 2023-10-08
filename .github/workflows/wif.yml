@@ -1,16 +1,12 @@
 name: github-pipeline
+
 on:
   workflow_dispatch:
- 
+
 jobs:
   build:
-    # Allow the job to fetch a GitHub ID token
-#    permissions:
-#      id-token: write
-#      contents: read
-
     runs-on: ubuntu-latest
-
+    steps:
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v1'
@@ -21,3 +17,4 @@ jobs:
       - name: List GCP Instances
         run: |
           gcloud compute instances list
+
