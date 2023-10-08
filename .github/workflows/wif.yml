@@ -23,4 +23,4 @@ jobs:
           service_account: 'github@studious-pen-399204.iam.gserviceaccount.com'
       - name: List GCP Instances
         run: |
-          gcloud compute instances list
+          gcloud compute instances list --verbosity=debug
