@@ -21,7 +21,6 @@ jobs:
           create_credentials_file: true
           workload_identity_provider: 'projects/210072437094/locations/global/workloadIdentityPools/github/providers/github-action'
           service_account: 'github@studious-pen-399204.iam.gserviceaccount.com'
-  
       - name: List GCP Instances
         run: |
           gcloud compute instances list
